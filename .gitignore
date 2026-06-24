@@ -1,0 +1,92 @@
+ /node_modules
+  /build
+  /coverage
+  .env.local
+  .env.*.local
+  .DS_Store
+      69 +├── static/             # CSS + JS                
+      70 +├── requirements.txt                              
+      71 +├── Procfile            # Railway/Gunicorn        
+         +entry point                                       
+      72 +└── railway.json        # Railway deploymen       
+         +t config                                          
+      73  ```
+      74
+      53 ----                                               
+      75 +## 🔌 Key endpoints                               
+      76
+      55 -## Extending this project                         
+      56 -Ideas to make it more impressive for fellow       
+         -ship applications:                                
+      57 -- Add a "Save brief as PDF" button                
+      58 -- Let users upload their existing materials       
+         - for Claude to reference                          
+      59 -- Add multiple tone presets with example ou       
+         -tputs                                             
+      60 -- Build a history page showing past briefs        
+      61 -- Deploy to Render or Railway (free hosting       
+         -) so you have a live URL to share                 
+      77 +| Route | Method | Purpose |                      
+      78 +|-------|--------|---------|                      
+      79 +| `/` | GET | Main app UI |                       
+      80 +| `/generate` | POST | Generate a campaign        
+         +brief (streamed) |                                
+      81 +| `/personas` | POST | Generate audience pe       
+         +rsonas |                                          
+      82 +| `/suggestions` | POST | Content suggestio       
+         +ns |                                              
+      83 +| `/visuals` | POST | Visual direction sugg       
+         +estions |                                         
+      84 +| `/tweak` | POST | Refine an existing brie       
+         +f |                                               
+      85 +| `/save` · `/history` | POST · GET | Save        
+         +and list briefs |                                 
+      86 +| `/orgs` | GET/POST/PUT/DELETE | Manage or       
+         +ganisation profiles |                             
+      87 +| `/export/pdf` | POST | Export a brief to        
+         +PDF |                                             
+      88 +                                                  
+      89 +## 🔒 Notes                                       
+      90 +- No secrets are committed — the API key is       
+         + supplied via environment variable only.          
+      91 +- The local database (`briefs.db`), logs, a       
+         +nd caches are excluded via `.gitignore`.          
+
+● Everything's prepped and safe. Let me update your records 
+  (I noticed your name from the project — Chelsi Patel — so 
+  I've added it), then I'll hand you the exact GitHub steps:
+
+● Update(00-PROFILE.md)
+  ⎿  Added 1 line
+       6  - **Education:** BSc Computer Science, 2:1,       
+           University of Bedfordshire.
+       7  - **Gap:** 1–2 years since graduating / las       
+          t serious study.
+       8  - **Location / right to work:** Lives in **       
+          Luton, UK** (direct Thameslink to central L       
+          ondon, ~30–45 min). **Has full right to wor       
+          k — no sponsorship needed.** ✅
+       9 +- **Name:** Chelsi Patel.                         
+      10  - **Personal:** Indian woman, turning 25.
+      11  - **Time available:** 5+ hours/day (full-ti       
+          me effort right now). This is a rare advant       
+          age — we use it.
+      12  - **Budget:** Small — enough for one or two       
+           essential cert exams, not much more.
+
+● Update(07-PORTFOLIO.md)
+  ⎿  Added 1 line, removed 1 line
+      33  ## Status board
+      34  | # | Piece | Status | Repo link |
+      35  |---|-------|--------|-----------|
+      36 -| — | Campaign-brief generator | ⏳ to uplo       
+         -ad | |                                            
+      36 +| — | Campaign-brief generator | 🟡 cleaned       
+         + + README polished, ready to upload (folder       
+         +: `Desktop\campaign-brief-generator-UPLOAD`       
+         +) | |                                             
+      37  | — | Uni project(s) | ⏳ to upload | |
+      38  | 1 | Test Plan + Cases | ⬜ not started |        
+          |
+      39  | 2 | Bug Report Showcase | ⬜ not started        
+          | |
